@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brain Tumor Detection</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Brain Tumor Detection</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#detect">Detect</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text-one">Hello,</div>
+      <div class="text-two">I'm Healing Titans</div>
+      <div class="text-three">A VGG19 Model</div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Brain Tumor:</span></div>
+      <div class="about-details">
+        <div class="left">
+          <video width='411' height='435' src="{{ url_for('static', filename='Video2.mp4') }}" controls>My Video</video>
+          <video width='411' height='435' src="{{ url_for('static', filename='Video1.mp4') }}" controls>My Video</video>
+        </div>
+        <div class="right">
+          <div class="topic"></div>
+          <p>
+            Brain tumors are abnormal cell growths within the brain. They can be either benign (non-cancerous) or malignant (cancerous). Brain tumors can cause a variety of symptoms depending on their location and size, such as headaches, seizures, vision problems, and changes in personality or cognitive function. Early detection of brain tumors is crucial for effective treatment and improving patient outcomes. Medical professionals use various imaging techniques, such as computed tomography (CT), positron emission tomography (PET), and magnetic resonance imaging (MRI), to diagnose and assess brain tumors.
+            Researchers have been working on developing automated systems for brain tumor detection and segmentation using deep learning techniques. These systems aim to assist medical professionals in the early diagnosis and treatment of brain tumors. One such system is a web application that combines deep learning models like VGG19 for classification, Mask R-CNN for instance segmentation, and PGGAN for super-resolution.
+            We use the VGG19 model as the base classification model to determine the presence of a tumor in the MRI scan. We then apply the Mask R-CNN model to pinpoint the precise position and outline of the tumor within the MRI image. Finally, we use a PGGAN model to improve the resolution of the MRI scan and the tumor segmentation mask, resulting in high-quality visualizations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="detect" id="detect">
+    <div class="content">
+      <div class="title"><span>Detection of Brain Tumor</span></div>
+      <form action="/predict" method="post" enctype="multipart/form-data">
+        <div class="upload-area">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <h3>Drag and drop files here</h3>
+          <span>OR</span>
+          <button type="button" class="choose-file-btn">Choose File</button>
+          <input type="file" name="image" accept="image/*" required>
+        </div>
+        <button type="submit">Detect Tumor</button>
+      </form>
+      <div class="output-image tumor-detected"></div>
+    </div>
+  </section>  
+
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <h2 class="mt-3">Healing Titans</h2>
+        <li>Mobile no: 9182266418</li>
+        <li>Address: Hyderabad</li>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">Healing Titans</a> | &#169; 2024 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <script src="../static/script.js"></script>
+</body>
+</html>
