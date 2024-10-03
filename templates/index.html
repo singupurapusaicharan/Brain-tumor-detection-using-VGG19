@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Brain Tumor Detection</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="./style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="stylesheet" type="text/css" href="./static/style.css">
 </head>
 <body>
   <!-- <div class="scroll-button">
@@ -49,8 +49,8 @@
       <div class="title"><span>About Brain Tumor:</span></div>
       <div class="about-details">
         <div class="left">
-          <video width='411' height='435' src="{{ url_for('static', filename='Video2.mp4') }}" controls>My Video</video>
-          <video width='411' height='435' src="{{ url_for('static', filename='Video1.mp4') }}" controls>My Video</video>
+          <video width='411' height='435' src="{{ url_for('static', filename='./Video2.mp4') }}" controls>My Video</video>
+          <video width='411' height='435' src="{{ url_for('static', filename='./Video1.mp4') }}" controls>My Video</video>
         </div>
         <div class="right">
           <div class="topic"></div>
@@ -67,7 +67,7 @@
   <section class="detect" id="detect">
     <div class="content">
       <div class="title"><span>Detection of Brain Tumor</span></div>
-      <form action="/predict" method="post" enctype="multipart/form-data">
+      <form action="./predict" method="post" enctype="multipart/form-data">
         <div class="upload-area">
           <i class="fas fa-cloud-upload-alt"></i>
           <h3>Drag and drop files here</h3>
