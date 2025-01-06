@@ -75,14 +75,35 @@ The model's performance is rigorously evaluated using:
 ## 📂 Project File Structure  
 
 ```markdown
-├── models/                # Saved model files (VGG19, PGGAN)  
-├── static/                # Static assets (CSS, JS, images)  
-├── templates/             # HTML templates for Flask  
-├── preprocessing/         # Scripts for image preprocessing  
-├── augmentation/          # Data augmentation utilities  
-├── flask_app.py           # Backend integration with Flask  
-├── requirements.txt       # Python dependencies  
-├── README.md              # Project documentation  
+Directory structure:
+└── singupurapusaicharan-Brain-tumor-detection-using-VGG19/
+    ├── README.md
+    ├── annotations.json.txt
+    ├── annotations.py
+    ├── app.py
+    ├── errors.php
+    ├── model.ipynb
+    ├── model.py
+    ├── register.php
+    ├── requirements.txt
+    ├── server.php
+    ├── logs/
+    │   ├── train/
+    │   └── validation/
+    ├── model/
+    │   └── vgg19_model2.keras
+    ├── static/
+    │   ├── login.css
+    │   ├── login.js
+    │   ├── picture3.avif
+    │   ├── result.css
+    │   ├── script.js
+    │   └── style.css
+    └── templates/
+        ├── index.html
+        ├── login.html
+        └── result.html
+ 
 
 ```
 
