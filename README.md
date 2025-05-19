@@ -134,8 +134,7 @@ Directory structure:
 
 ## 📸 Example Screenshot
 
-![image](https://github.com/user-attachments/assets/a230486c-96e6-4921-b6a8-451edbc97941)
-
+![image](https://github.com/user-attachments/assets/a230486c-96e6-4921-b6a8-451edbc97941 | width=100)
 
 *Sample output showing the detected tumor and its classification.*
 
@@ -146,5 +145,3 @@ Directory structure:
 - **Innovative**: Combines GANs for synthetic image generation and VGG19 for classification  
 - **Impactful**: Focuses on real-world application in healthcare  
 - **User-Friendly**: Delivered as an intuitive web application  
-
----
