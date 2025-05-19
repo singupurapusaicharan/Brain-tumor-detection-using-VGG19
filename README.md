@@ -135,6 +135,8 @@ Directory structure:
 ## 📸 Example Screenshot
 
 ![image](https://github.com/user-attachments/assets/a230486c-96e6-4921-b6a8-451edbc97941)
+
+
 *Sample output showing the detected tumor and its classification.*
 
 ---
