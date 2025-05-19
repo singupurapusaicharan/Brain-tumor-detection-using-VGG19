@@ -134,11 +134,9 @@ Directory structure:
 
 ## 📸 Example Screenshot
 
-![image](https://github.com/user-attachments/assets/d302f264-8c62-471d-8c0c-2e79e45224ac)
 
 
-
-<img src="file:///D:/Minor%20project/brain.jpg" width="300" height="300" />
+<img src="https://github.com/user-attachments/assets/d302f264-8c62-471d-8c0c-2e79e45224ac" width="300" height="300" />
 
 *Sample output showing the detected tumor and its classification.*
 
