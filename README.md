@@ -1,78 +1,80 @@
-# 🏢 GAN-Based Medical Imaging Analysis for Brain Tumor Detection  
+# 🏢 GAN-Based Medical Imaging Analysis for Brain Tumor Detection
 
-Detecting brain tumors early can save lives. This project combines cutting-edge deep learning techniques and user-friendly design to create a powerful solution for medical imaging analysis.  
-
----
-
-## 🌟 Key Features  
-
-- ⚛ **Tumor Detection**: Analyze uploaded brain images to detect tumor presence.  
-- 🌎 **Tumor Classification**: Identify the type of tumor.  
-- 🎨 **Tumor Localization**: Highlight the tumor's location on the image.  
-
-The system is trained on a robust dataset with multiple tumor classes to ensure high accuracy and reliability.  
+Detecting brain tumors early can save lives. This project combines cutting-edge deep learning techniques and user-friendly design to create a powerful solution for medical imaging analysis.
 
 ---
 
-## ⚙ Process Workflow  
+## 🌟 Key Features
 
-### 1️⃣ 🔄 Image Preprocessing  
-Input images are refined for optimal analysis through:  
+- **Tumor Detection**: Analyze uploaded brain images to detect tumor presence.  
+- **Tumor Classification**: Identify the type of tumor.  
+- **Tumor Localization**: Highlight the tumor's location on the image.  
 
-- 🔍 **Resizing**: Standardize dimensions.  
-- 🔄 **Rotation**: Align images.  
-- ✔ **Normalization**: Ensure consistent pixel values.  
-- 🔢 **Cropping**: Focus on the region of interest.  
-- 🎨 **Skull Stripping**: Remove irrelevant parts.  
-- 🌌 **Denoising**: Apply Gaussian filtering to remove noise.  
+The system is trained on a robust dataset with multiple tumor classes to ensure high accuracy and reliability.
 
 ---
 
-### 2️⃣ 🥕 Synthetic Image Generation with PGGAN  
-Progressive GAN (PGGAN) generates synthetic images that:  
+## ⚙ Process Workflow
 
-- 🎨 Mimic high-resolution brain scans.  
-- ➕ Increase dataset variability, enhancing robustness.  
+### 1. Image Preprocessing
+Input images are refined for optimal analysis through:
 
-**Why PGGAN?** Its progressive layer addition minimizes artifacts and ensures detailed, realistic images.  
-
----
-
-### 3️⃣ 🎨 Data Augmentation  
-To further diversify the dataset, the following augmentation techniques are applied:  
-
-- 💮 **Rotation**  
-- 🔥 **Shearing**  
-- 🎖 **Width/Height Shifts**  
-- ⤴ **Flipping**  
+- Resizing: Standardize dimensions  
+- Rotation: Align images  
+- Normalization: Ensure consistent pixel values  
+- Cropping: Focus on the region of interest  
+- Skull Stripping: Remove irrelevant parts  
+- Denoising: Apply Gaussian filtering to remove noise  
 
 ---
 
-### 4️⃣ 🏛 Tumor Detection and Classification  
-Using **VGG19**, a pre-trained CNN:  
+### 2. Synthetic Image Generation with PGGAN
+Progressive GAN (PGGAN) generates synthetic images that:
 
-- ⚖ **Transfer Learning**: Retrain fully connected layers for tumor classification.  
-- ➡ **Activation Functions**:  
-  - ReLU for hidden layers.  
-  - Softmax for multi-class predictions.  
-- 📊 **Normalization**: Accelerate training and improve performance.  
+- Mimic high-resolution brain scans  
+- Increase dataset variability, enhancing robustness  
 
----
-
-### 5️⃣ 📊 Model Evaluation  
-The model's performance is rigorously evaluated using:  
-
-- ✅ **Accuracy**  
-- ✔ **Precision**  
-- ❤ **Recall**  
-- 🔸 **F1-Score**  
-- ✝ **Cohen's Kappa Coefficient**  
-- 💡 **AUC (Area Under the Curve)**  
-- ◼ **Confusion Matrix**  
+**Why PGGAN?** Its progressive layer addition minimizes artifacts and ensures detailed, realistic images.
 
 ---
 
-## 📂 Project File Structure  
+### 3. Data Augmentation
+To further diversify the dataset, the following techniques are applied:
+
+- Rotation  
+- Shearing  
+- Width/Height Shifts  
+- Flipping  
+
+---
+
+### 4. Tumor Detection and Classification
+Using **VGG19**, a pre-trained CNN:
+
+- **Transfer Learning**: Retrain fully connected layers for tumor classification  
+- **Activation Functions**:  
+  - ReLU for hidden layers  
+  - Softmax for multi-class predictions  
+- **Normalization**: Accelerates training and improves performance  
+
+---
+
+### 5. Model Evaluation
+Performance is evaluated using:
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1-Score  
+- Cohen's Kappa Coefficient  
+- AUC (Area Under the Curve)  
+- Confusion Matrix  
+
+---
+
+## 📂 Project File Structure
+
+
 
 ```markdown
 Directory structure:
@@ -107,42 +109,40 @@ Directory structure:
 
 ```
 
+
 ---
 
-## 📊 Technologies Used  
+## 🧠 Technologies Used
 
-### **Deep Learning Models**  
-- VGG19 for tumor classification  
+### Deep Learning Models
+- VGG19 for tumor classification
 
-### **Frontend**  
-- HTML, CSS, JavaScript, React.js  
+### Frontend
+- HTML, CSS, JavaScript, React.js
 
-### **Backend**  
-- Flask for model integration  
+### Backend
+- Flask for model integration
 
-### **Programming & Frameworks**  
-- Python, TensorFlow, Keras  
+### Programming & Frameworks
+- Python, TensorFlow, Keras
 
-### **Tools**  
+### Tools
 - Matplotlib for visualizations  
-- Jupyter Notebook for training  
+- Jupyter Notebook for training
 
 ---
 
-### Example Screenshot  
-![Brain Tumor Detection Example](https://via.placeholder.com/800x400.png?text=Example+Brain+Tumor+Detection+Image)  
+## 📸 Example Screenshot
 
-*Above: A sample output showing the detected tumor and its classification.*  
-
----
-
-## 🎮 Why This Project Stands Out  
-
-- ✨ **Innovative**: Combines GANs for synthetic image generation and VGG19 for accurate classification.  
-- ⚖ **Impactful**: Focuses on real-world impact through precise tumor detection.  
-- 🏢 **User-Friendly**: Delivered as an intuitive web application.  
+![Brain Tumor Detection Example](https://via.placeholder.com/800x400.png?text=Example+Brain+Tumor+Detection+Image)
+*Sample output showing the detected tumor and its classification.*
 
 ---
 
-### 💡 Ready to revolutionize medical imaging with AI technology!  
+## 💡 Why This Project Stands Out
 
+- **Innovative**: Combines GANs for synthetic image generation and VGG19 for classification  
+- **Impactful**: Focuses on real-world application in healthcare  
+- **User-Friendly**: Delivered as an intuitive web application  
+
+---
